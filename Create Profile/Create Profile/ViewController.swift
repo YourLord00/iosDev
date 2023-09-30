@@ -68,6 +68,10 @@ class ViewController: UIViewController {
             showErrorAlert(currentField: "Phone")
             return
         }
+        guard phoneNumberValid(phoneSession) else {
+            showAlertText(text: "Please enter a valid phone number with 9 digits")
+            return
+        }
         guard let addressSession = firstScreen.textFieldAddress.text, !addressSession.isEmpty else {
             showErrorAlert(currentField: "Address")
             return
@@ -132,6 +136,13 @@ class ViewController: UIViewController {
 
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
+    }
+    func phoneNumberValid(_ poneNumber: String) -> Bool {
+        if poneNumber.count == 9 {
+            guard let digitPoneNumber = Int(poneNumber) else { return false }
+            return (digitPoneNumber >= 1 && digitPoneNumber <= 999999999)
+        }
+        return false
     }
 }
 

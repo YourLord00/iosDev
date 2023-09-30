@@ -17,45 +17,42 @@ class DisplayViewController: UIViewController {
         super.viewDidLoad()
         
         //MARK: setting the Labels' texts...
-        if let unwrappedMessage = receivedPackage.name{
-            if !unwrappedMessage.isEmpty{
-                displayScreen.textFieldName.text = "Your message: \(unwrappedMessage)"
+        if let unwrappedMessageName = receivedPackage.name{
+            if !unwrappedMessageName.isEmpty{
+                displayScreen.textFieldName.text = "Your message: \(unwrappedMessageName)"
             }
         }
         
-        if let unwrappedMessage = receivedPackage.email{
-            if !unwrappedMessage.isEmpty{
-                displayScreen.textFieldName.text = "Your message: \(unwrappedMessage)"
+        if let unwrappedMessageEmail = receivedPackage.email{
+            if !unwrappedMessageEmail.isEmpty{
+                displayScreen.textFieldEmail.text = "Email: \(unwrappedMessageEmail)"
             }
         }
         
-        if let unwrappedMessage = receivedPackage.selectedPhoneType{
-            if !unwrappedMessage.isEmpty{
-                displayScreen.textFieldName.text = "Your message: \(unwrappedMessage)"
+        
+        if let unwrappedMessagePhoneNumber = receivedPackage.phoneNumber{
+            if !unwrappedMessagePhoneNumber.isEmpty{
+                if let unwrappedSelectedPhoneType = receivedPackage.selectedPhoneType{
+                    displayScreen.textFieldPhone.text = "Phone: \(unwrappedMessagePhoneNumber) (\(unwrappedSelectedPhoneType))"
+                }
             }
         }
         
-        if let unwrappedMessage = receivedPackage.phoneNumber{
-            if !unwrappedMessage.isEmpty{
-                displayScreen.textFieldName.text = "Your message: \(unwrappedMessage)"
+        if let unwrappedMessageAddress = receivedPackage.address{
+            if !unwrappedMessageAddress.isEmpty{
+                displayScreen.textFieldAddress.text = "Address: \(unwrappedMessageAddress)"
             }
         }
         
-        if let unwrappedMessage = receivedPackage.address{
-            if !unwrappedMessage.isEmpty{
-                displayScreen.textFieldName.text = "Your message: \(unwrappedMessage)"
+        if let unwrappedMessageCityState = receivedPackage.cityState{
+            if !unwrappedMessageCityState.isEmpty{
+                displayScreen.textFieldCityState.text = "\(unwrappedMessageCityState)"
             }
         }
         
-        if let unwrappedMessage = receivedPackage.cityState{
-            if !unwrappedMessage.isEmpty{
-                displayScreen.textFieldName.text = "Your message: \(unwrappedMessage)"
-            }
-        }
-        
-        if let unwrappedMessage = receivedPackage.zipCode{
-            if !unwrappedMessage.isEmpty{
-                displayScreen.textFieldName.text = "Your message: \(unwrappedMessage)"
+        if let unwrappedMessageZipCode = receivedPackage.zipCode{
+            if !unwrappedMessageZipCode.isEmpty{
+                displayScreen.textFieldZipCode.text = "Zip Code: \(unwrappedMessageZipCode)"
             }
         }
     }
