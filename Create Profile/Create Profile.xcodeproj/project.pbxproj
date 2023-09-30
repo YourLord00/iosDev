@@ -64,16 +64,32 @@
 			children = (
 				B3EAB15B2AC75E9200577C1D /* AppDelegate.swift */,
 				B3EAB15D2AC75E9200577C1D /* SceneDelegate.swift */,
-				B3EAB15F2AC75E9200577C1D /* ViewController.swift */,
 				B3EAB1612AC75E9200577C1D /* Main.storyboard */,
-				B3EAB16F2AC760A900577C1D /* FirstScreenView.swift */,
-				B3EAB1752AC7859C00577C1D /* DisplayView.swift */,
-				B3EAB1772AC786E600577C1D /* DisplayViewController.swift */,
+				B3EAB17A2AC7C54600577C1D /* FirstView */,
+				B3EAB1792AC7C52A00577C1D /* SecondView */,
 				B3EAB1642AC75E9300577C1D /* Assets.xcassets */,
 				B3EAB1662AC75E9300577C1D /* LaunchScreen.storyboard */,
 				B3EAB1692AC75E9300577C1D /* Info.plist */,
 			);
 			path = "Create Profile";
+			sourceTree = "<group>";
+		};
+		B3EAB1792AC7C52A00577C1D /* SecondView */ = {
+			isa = PBXGroup;
+			children = (
+				B3EAB1752AC7859C00577C1D /* DisplayView.swift */,
+				B3EAB1772AC786E600577C1D /* DisplayViewController.swift */,
+			);
+			path = SecondView;
+			sourceTree = "<group>";
+		};
+		B3EAB17A2AC7C54600577C1D /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				B3EAB15F2AC75E9200577C1D /* ViewController.swift */,
+				B3EAB16F2AC760A900577C1D /* FirstScreenView.swift */,
+			);
+			path = FirstView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
