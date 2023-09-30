@@ -89,11 +89,12 @@ class ViewController: UIViewController {
         
         let displayViewController = DisplayViewController()
                        
-                       //setting the to be sent package...
-                       displayViewController.receivedPackage = package
-                       
-                       //pushing displayController to navigation controller...
-                       navigationController?.pushViewController(displayViewController, animated: true)
+       //setting the to be sent package...
+       displayViewController.receivedPackage = package
+       
+       //pushing displayController to navigation controller...
+       navigationController?.pushViewController(displayViewController, animated: true)
+        
     }
     
     func showErrorAlert(currentField: String){
