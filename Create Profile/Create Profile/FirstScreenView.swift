@@ -40,9 +40,6 @@ class FirstScreenView: UIView {
         
         initConstraints()
         
-        
-//        buttonSubmit.addTarget(self, action: #selector(onButtonClickMeTapped), for: .touchUpInside)
-        
     }
     
     

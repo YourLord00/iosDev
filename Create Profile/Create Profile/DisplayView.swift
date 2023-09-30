@@ -10,6 +10,8 @@ class DisplayView: UIView {
     var textFieldCityState: UITextField!
     var textFieldZipCode: UITextField!
     
+    var imageViewPhoneType: UIImageView!
+    
     //MARK: View initializer...
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,6 +28,8 @@ class DisplayView: UIView {
         setupTextFieldCityState()
         setupTextFieldZipCode()
         
+        setupImageViewPhoneType()
+        
         initConstraints()
     }
     
@@ -34,6 +38,13 @@ class DisplayView: UIView {
     }
     
     //MARK: initializing the UI elements...
+    func setupImageViewPhoneType(){
+        imageViewPhoneType = UIImageView()
+        imageViewPhoneType.contentMode = .scaleAspectFit
+        imageViewPhoneType.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(imageViewPhoneType)
+    }
+    
     func setupTextFieldName(){
         textFieldName = UITextField()
 //        textFieldName.placeholder = "Name"
@@ -83,34 +94,31 @@ class DisplayView: UIView {
     func initConstraints(){
             NSLayoutConstraint.activate([
                 
-                textFieldName.topAnchor.constraint(equalTo: self.bottomAnchor, constant: 16),
-                textFieldName.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
+                textFieldName.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 16),
                 textFieldName.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
                 
                 
                 textFieldEmail.topAnchor.constraint(equalTo: textFieldName.bottomAnchor, constant: 16),
-                textFieldEmail.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
                 textFieldEmail.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
                 
                 
                 textFieldPhone.topAnchor.constraint(equalTo: textFieldEmail.bottomAnchor, constant: 16),
-                textFieldPhone.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
                 textFieldPhone.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
                 
                 
                 textFieldAddress.topAnchor.constraint(equalTo: textFieldPhone.safeAreaLayoutGuide.bottomAnchor, constant: 16),
-                textFieldAddress.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
                 textFieldAddress.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
         
                 
                 textFieldCityState.topAnchor.constraint(equalTo: textFieldAddress.safeAreaLayoutGuide.bottomAnchor, constant: 16),
-                textFieldCityState.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
                 textFieldCityState.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
                 
                 
                 textFieldZipCode.topAnchor.constraint(equalTo: textFieldCityState.safeAreaLayoutGuide.bottomAnchor, constant: 16),
-                textFieldZipCode.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
                 textFieldZipCode.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+                
+                imageViewPhoneType.topAnchor.constraint(equalTo: textFieldZipCode.safeAreaLayoutGuide.bottomAnchor, constant: 90),
+                imageViewPhoneType.centerXAnchor.constraint(equalTo: self.centerXAnchor)
             
             ])
         }

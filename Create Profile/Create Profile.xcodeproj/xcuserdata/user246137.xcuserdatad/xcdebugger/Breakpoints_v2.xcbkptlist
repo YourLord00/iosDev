@@ -14,8 +14,8 @@
             filePath = "Create Profile/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "onButtonSubmitTapped()"
             landmarkType = "7">
          </BreakpointContent>
@@ -24,48 +24,16 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "79971983-1FE7-43D9-B915-CF1299B0335E"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Create Profile/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "onButtonSubmitTapped()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "79971983-1FE7-43D9-B915-CF1299B0335E - 23106350e9de9037"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Create_Profile.ViewController.onButtonSubmitTapped() -&gt; ()"
-                  moduleName = "Create Profile"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user246137/Desktop/iosDev/Create%20Profile/Create%20Profile/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "88"
-                  endingLineNumber = "88"
-                  offsetFromSymbolStart = "2864">
-               </Location>
-               <Location
-                  uuid = "79971983-1FE7-43D9-B915-CF1299B0335E - 23106350e9de90bb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Create_Profile.ViewController.onButtonSubmitTapped() -&gt; ()"
-                  moduleName = "Create Profile"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user246137/Desktop/iosDev/Create%20Profile/Create%20Profile/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "92"
-                  endingLineNumber = "92"
-                  offsetFromSymbolStart = "2908">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -78,8 +46,8 @@
             filePath = "Create Profile/DisplayViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -114,6 +82,70 @@
                   offsetFromSymbolStart = "4196">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "94C2F248-75EA-4B1D-80D5-CC2F4893DB4E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Create Profile/DisplayViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "94C2F248-75EA-4B1D-80D5-CC2F4893DB4E - 26691e99de958547"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Create_Profile.DisplayViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Create Profile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user246137/Desktop/iosDev/Create%20Profile/Create%20Profile/DisplayViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "1540">
+               </Location>
+               <Location
+                  uuid = "94C2F248-75EA-4B1D-80D5-CC2F4893DB4E - 26691e99de958547"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Create_Profile.DisplayViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Create Profile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user246137/Desktop/iosDev/Create%20Profile/Create%20Profile/DisplayViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "1636">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DA8951A-5D7E-4158-AE2A-D81A6A979525"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Create Profile/DisplayViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

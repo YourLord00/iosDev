@@ -34,6 +34,7 @@ class DisplayViewController: UIViewController {
             if !unwrappedMessagePhoneNumber.isEmpty{
                 if let unwrappedSelectedPhoneType = receivedPackage.selectedPhoneType{
                     displayScreen.textFieldPhone.text = "Phone: \(unwrappedMessagePhoneNumber) (\(unwrappedSelectedPhoneType))"
+                    displayScreen.imageViewPhoneType.image = UIImage(named: unwrappedSelectedPhoneType.lowercased())
                 }
             }
         }

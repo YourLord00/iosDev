@@ -6,25 +6,25 @@ class ViewController: UIViewController {
     
     var selectedPhoneType = "Cell"
     
-        public struct Package {
-            var name:String?
-            var email:String?
-            var selectedPhoneType:String?
-            var phoneNumber:String?
-            var address:String?
-            var cityState:String?
-            var zipCode:String?
-    
-            init(name: String? = nil, email: String? = nil, selectedPhoneType: String? = nil, phoneNumber: String? = nil, address: String? = nil, cityState: String? = nil, zipCode: String? = nil) {
-                self.name = name
-                self.email = email
-                self.selectedPhoneType = selectedPhoneType
-                self.phoneNumber = phoneNumber
-                self.address = address
-                self.cityState = cityState
-                self.zipCode = zipCode
-            }
+    public struct Package {
+        var name:String?
+        var email:String?
+        var selectedPhoneType:String?
+        var phoneNumber:String?
+        var address:String?
+        var cityState:String?
+        var zipCode:String?
+
+        init(name: String? = nil, email: String? = nil, selectedPhoneType: String? = nil, phoneNumber: String? = nil, address: String? = nil, cityState: String? = nil, zipCode: String? = nil) {
+            self.name = name
+            self.email = email
+            self.selectedPhoneType = selectedPhoneType
+            self.phoneNumber = phoneNumber
+            self.address = address
+            self.cityState = cityState
+            self.zipCode = zipCode
         }
+    }
     
     //MARK: initializing the First Screen View...
     let firstScreen = FirstScreenView()
@@ -43,12 +43,6 @@ class ViewController: UIViewController {
         firstScreen.buttonSubmit.addTarget(self, action: #selector(onButtonSubmitTapped), for: .touchUpInside)
     }
     @objc func onButtonSubmitTapped(){
-//        let emailSession = firstScreen.textFieldEmail.text
-//        let nameSession = firstScreen.textFieldName.text
-//        let phoneSession = firstScreen.textFieldPhone.text
-//        let addressSession = firstScreen.textFieldAddress.text
-//        let cityStateSession = firstScreen.textFieldCityState.text
-//        let zipCodeSession = firstScreen.textFieldZipCode.text
         
         guard let nameSession = firstScreen.textFieldName.text, !nameSession.isEmpty else {
             showErrorAlert(currentField: "Name")
@@ -63,7 +57,7 @@ class ViewController: UIViewController {
             showAlertText(text: "Please enter a valid email address!")
             return
         }
-        
+ 
         guard let phoneSession = firstScreen.textFieldPhone.text, !phoneSession.isEmpty else {
             showErrorAlert(currentField: "Phone")
             return
